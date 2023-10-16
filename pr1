@@ -1,3 +1,15 @@
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a gallery of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-11235rsdfags
-asdfadsf
+pip install lorem-text
+pip install lorem
+
+lorem = TextLorem(wsep=' ', srange=(60,60))
+s1 = lorem.sentence()
+
+lorem = TextLorem(wsep='', srange=(8,8), words='1 2 3 5 r s d f a g s'.split())
+s2 = (lorem.sentence())
+
+lorem = TextLorem(wsep='', srange=(8,8),words = 'a s d f a d s f'.split())
+s3 = lorem.sentence() 
+
+print(s1)
+print(s2)
+print(s3)
